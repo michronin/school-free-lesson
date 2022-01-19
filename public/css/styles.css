@@ -88,7 +88,11 @@ user-select: none;
     background-color: #ffe5e5;
 }
 
-
+.reason {
+    font-family: 'Bona Nova', serif;
+    list-style-type: circle;
+    font-size: 1.7vmin;
+}
 
 /*.reasons {*/
 /*    !*list-style-type: ;*!*/
@@ -102,15 +106,10 @@ user-select: none;
 /*    display: block;*/
 /*}*/
 
-/*.reason {*/
-/*    padding: 1vmin;*/
-/*    font-family: 'Bona Nova', serif;*/
 
-/*}*/
 
 /*.reason, .reasons {*/
-/*    background-color: #ffe5e5;*/
-/*    border-radius: calc(var(--border-r) / 3);*/
+
 /*}*/
 
 /*.hidden {*/
