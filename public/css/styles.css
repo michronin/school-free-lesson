@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(125,255,0,1) 0%, rgba(59,0,255,1) 100%);
+}
+
+:root {
+    --border-r: 3.5vmin;
+}
+* {
+    text-align: right;
+    direction: rtl;
+user-select: none;
+}
+
+#main-box {
+    width: 80vmin;
+    height: 50vmin;
+    /*background-color: white;*/
+    /*padding: 3vmin;*/
+}
+
+#title {
+    font-family: 'Rubik Beastly', cursive;
+    text-align: center;
+    font-size: 2.5vmin;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-top-right-radius: var(--border-r);
+    border-top-left-radius: var(--border-r);
+    padding: 3vmin;
+    margin: 0;
+}
+
+#reasons {
+    border-bottom-right-radius: var(--border-r);
+    border-bottom-left-radius: var(--border-r);
+    margin: 0;
+    padding: 3vmin;
+    background-color: #ff9999;
+    max-height: 80%;
+
+}
+
+
+.collapsible {
+    background-color: #ff7474;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    /*font-size: 15px;*/
+    margin-top: 1%;
+    font-size: 2vmin;
+}
+
+.active, .collapsible:hover {
+    background-color: #ff5e5e;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    color: #000000;
+    font-size: 2vmin;
+
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffe5e5;
+}
+
+
+
+/*.reasons {*/
+/*    !*list-style-type: ;*!*/
+/*    margin: 1vmin;*/
+/*    max-height: 50vmin;*/
+/*    !*overflow: hidden;*!*/
+/*}*/
+
+/*#firstDetails {*/
+/*    transition: all 1s linear;*/
+/*    display: block;*/
+/*}*/
+
+/*.reason {*/
+/*    padding: 1vmin;*/
+/*    font-family: 'Bona Nova', serif;*/
+
+/*}*/
+
+/*.reason, .reasons {*/
+/*    background-color: #ffe5e5;*/
+/*    border-radius: calc(var(--border-r) / 3);*/
+/*}*/
+
+/*.hidden {*/
+/*    display: none!important;*/
+/*}*/
+
+/*.visuallyhidden {*/
+/*    opacity: 0;*/
+/*    !*height: 0;*!*/
+/*}*/
